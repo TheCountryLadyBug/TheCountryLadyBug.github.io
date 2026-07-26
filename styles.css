@@ -1,3 +1,4 @@
+<!--
 body, html {
   height: 100%;
 }
@@ -22,3 +23,36 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+-->
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fill the browser window */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #f9dfe8;
+}
+
+/* Hero container */
+.hero {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Make image cover the entire screen */
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* Fills screen without stretching */
+    object-position: center;
+    display: block;
+}
+  
